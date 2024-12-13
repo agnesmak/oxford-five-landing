@@ -37,7 +37,7 @@
     @apply bg-gradient-dark text-oxford-white font-inter;
   }
   h1, h2, h3, h4, h5, h6 {
-    @apply font-garamond font-bold;
+    @apply font-gloock font-bold;
   }
   p, span, a, button {
     @apply font-inter;
