@@ -58,11 +58,12 @@ const Index = () => {
                 <span className="font-garamond text-oxford-blue no-underline">AI-SEO</span> to maintain 
                 your brand presence in AI-Powered Search
               </h2>
-              <p className="text-oxford-white/80 text-lg leading-relaxed text-left">
+              <p className="text-oxford-white/80 text-base leading-relaxed text-left">
                 Navigate the AI revolution with our advanced metrics. We measure your brand's presence 
                 and performance in AI-powered searches, from ChatGPT to Google's smart results. 
-                Become the go-to answer for both humans and algorithms. Engage Oxford Five to not 
-                just see where you stand, but also get the roadmap to dominate.
+                Become the go-to answer for both humans and algorithms.
+                <br /><br />
+                Engage Oxford Five to not just see where you stand, but also get the roadmap to dominate.
               </p>
               <div className="grid grid-cols-3 gap-6">
                 <FeatureCard
