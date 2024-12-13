@@ -65,23 +65,6 @@ const Index = () => {
                 <br /><br />
                 Engage Oxford Five to not just see where you stand, but also get the roadmap to dominate.
               </p>
-              <div className="grid grid-cols-3 gap-6">
-                <FeatureCard
-                  title="Data Analytics"
-                  description="Transform raw data into meaningful insights with our advanced analytics solutions"
-                  Icon={Database}
-                />
-                <FeatureCard
-                  title="Marketing Intelligence"
-                  description="Make data-driven marketing decisions with our comprehensive analytics tools"
-                  Icon={BarChart3}
-                />
-                <FeatureCard
-                  title="Global Reach"
-                  description="Connect with markets worldwide through our international network and expertise"
-                  Icon={Globe}
-                />
-              </div>
             </div>
             <div className="relative animate-fade-in">
               <div className="aspect-video rounded-xl overflow-hidden bg-oxford-navy/30 backdrop-blur-sm border border-oxford-white/10 p-6">
@@ -92,6 +75,32 @@ const Index = () => {
                 />
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* How Oxford Five can help Section */}
+      <section className="py-20 px-4 bg-oxford-navy/30">
+        <div className="container mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-oxford-white mb-12 text-center">
+            How Oxford Five can help
+          </h2>
+          <div className="grid md:grid-cols-3 gap-6">
+            <FeatureCard
+              title="Data Analytics"
+              description="Transform raw data into meaningful insights with our advanced analytics solutions"
+              Icon={Database}
+            />
+            <FeatureCard
+              title="Marketing Intelligence"
+              description="Make data-driven marketing decisions with our comprehensive analytics tools"
+              Icon={BarChart3}
+            />
+            <FeatureCard
+              title="Global Reach"
+              description="Connect with markets worldwide through our international network and expertise"
+              Icon={Globe}
+            />
           </div>
         </div>
       </section>
