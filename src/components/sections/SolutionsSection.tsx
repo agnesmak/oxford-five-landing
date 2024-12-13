@@ -6,9 +6,9 @@ const SolutionsSection = () => {
   return (
     <section className="py-20 px-4 bg-oxford-navy/30">
       <div className="container mx-auto">
-        <p className="text-[#EDB230] text-lg font-semibold mb-2">IMPROVE YOUR BRAND PRESENCE IN AI WITH US</p>
+        <p className="text-[#FFD046] text-lg font-semibold mb-2">IMPROVE YOUR BRAND PRESENCE IN AI WITH US</p>
         <h2 className="text-3xl md:text-4xl font-bold text-oxford-white mb-12">
-          Why choose <span className="text-[#EDB230]">Oxford Five</span>
+          Why choose <span className="text-[#FFD046]">Oxford Five</span>
         </h2>
         <div className="grid md:grid-cols-3 gap-6">
           <FeatureCard
