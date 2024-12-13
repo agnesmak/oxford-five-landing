@@ -1,60 +1,59 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import Logo from "./Logo";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed w-full bg-oxford-navy/80 backdrop-blur-md z-50 py-5 border-b border-oxford-white/10">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-oxford-navy/80 backdrop-blur-sm border-b border-oxford-white/10">
       <div className="container mx-auto px-4">
-        <div className="flex justify-between items-center">
-          <a href="#" className="text-2xl font-bold text-oxford-white">
-            Oxford V
-          </a>
-
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-8">
-            <a href="#features" className="text-oxford-white/80 hover:text-oxford-blue transition-colors font-medium">
-              Features
-            </a>
-            <a href="#about" className="text-oxford-white/80 hover:text-oxford-blue transition-colors font-medium">
-              About
-            </a>
-            <a href="#contact" className="text-oxford-white/80 hover:text-oxford-blue transition-colors font-medium">
-              Contact
-            </a>
-          </div>
-
-          {/* Mobile Navigation Button */}
+        <div className="flex justify-between items-center h-16">
+          <Logo className="text-oxford-white" />
+          
+          {/* Mobile menu button */}
           <button
-            className="md:hidden text-oxford-white"
             onClick={() => setIsOpen(!isOpen)}
+            className="md:hidden text-oxford-white"
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
+
+          {/* Desktop menu */}
+          <div className="hidden md:flex space-x-8">
+            <a href="#features" className="text-oxford-white/80 hover:text-oxford-white transition-colors">
+              Features
+            </a>
+            <a href="#about" className="text-oxford-white/80 hover:text-oxford-white transition-colors">
+              About
+            </a>
+            <a href="#contact" className="text-oxford-white/80 hover:text-oxford-white transition-colors">
+              Contact
+            </a>
+          </div>
         </div>
 
-        {/* Mobile Navigation Menu */}
+        {/* Mobile menu */}
         {isOpen && (
-          <div className="md:hidden absolute top-full left-0 right-0 bg-oxford-navy/95 border-t border-oxford-white/10 backdrop-blur-md">
-            <div className="flex flex-col space-y-4 p-6">
+          <div className="md:hidden py-4">
+            <div className="flex flex-col space-y-4">
               <a
                 href="#features"
-                className="text-oxford-white/80 hover:text-oxford-blue transition-colors font-medium"
+                className="text-oxford-white/80 hover:text-oxford-white transition-colors"
                 onClick={() => setIsOpen(false)}
               >
                 Features
               </a>
               <a
                 href="#about"
-                className="text-oxford-white/80 hover:text-oxford-blue transition-colors font-medium"
+                className="text-oxford-white/80 hover:text-oxford-white transition-colors"
                 onClick={() => setIsOpen(false)}
               >
                 About
               </a>
               <a
                 href="#contact"
-                className="text-oxford-white/80 hover:text-oxford-blue transition-colors font-medium"
+                className="text-oxford-white/80 hover:text-oxford-white transition-colors"
                 onClick={() => setIsOpen(false)}
               >
                 Contact
