@@ -6,8 +6,9 @@ const SolutionsSection = () => {
   return (
     <section className="py-20 px-4 bg-oxford-navy/30">
       <div className="container mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-oxford-white mb-12 text-center">
-          How Oxford Five can help
+        <p className="text-[#F97316] text-lg font-semibold mb-2">IMPROVE YOUR BRAND PRESENCE IN AI WITH US</p>
+        <h2 className="text-3xl md:text-4xl font-bold text-oxford-white mb-12">
+          Why choose <span className="text-[#F97316]">Oxford Five</span>
         </h2>
         <div className="grid md:grid-cols-3 gap-6">
           <FeatureCard
