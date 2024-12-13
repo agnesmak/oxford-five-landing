@@ -60,8 +60,8 @@ export default {
         },
       },
       fontFamily: {
-        matter: ["Matter", "sans-serif"],
-        inter: ["Inter", "sans-serif"],
+        garamond: ['EB Garamond', 'serif'],
+        inter: ['Inter', 'sans-serif'],
       },
       keyframes: {
         "fade-up": {

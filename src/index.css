@@ -1,29 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@font-face {
-  font-family: 'Matter';
-  src: url('/fonts/Matter-Regular.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Matter';
-  src: url('/fonts/Matter-Medium.woff2') format('woff2');
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Matter';
-  src: url('/fonts/Matter-Bold.woff2') format('woff2');
-  font-weight: 700;
-  font-style: normal;
-}
 
 @layer base {
   :root {
@@ -55,10 +34,10 @@
     @apply border-border;
   }
   body {
-    @apply bg-gradient-dark text-oxford-white font-matter;
+    @apply bg-gradient-dark text-oxford-white font-inter;
   }
   h1, h2, h3, h4, h5, h6 {
-    @apply font-matter font-bold;
+    @apply font-garamond font-bold;
   }
   p, span, a, button {
     @apply font-inter;
