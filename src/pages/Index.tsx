@@ -5,7 +5,6 @@ import VisionSection from "@/components/sections/VisionSection";
 import FeaturesSection from "@/components/sections/FeaturesSection";
 import SolutionsSection from "@/components/sections/SolutionsSection";
 import AboutSection from "@/components/sections/AboutSection";
-import ContactSection from "@/components/sections/ContactSection";
 
 const Index = () => {
   return (
@@ -16,7 +15,6 @@ const Index = () => {
       <FeaturesSection />
       <SolutionsSection />
       <AboutSection />
-      <ContactSection />
       
       {/* Footer */}
       <footer className="bg-oxford-navy py-8">

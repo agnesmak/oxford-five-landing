@@ -13,9 +13,14 @@ const AboutSection = () => {
             
             Our deep understanding of artificial intelligence and its applications in business transformation sets us apart. We're passionate about leveraging cutting-edge AI technologies to revolutionize how brands interact with their audiences in the new digital age.
           </p>
-          <Button asChild variant="secondary" size="lg">
-            <Link to="/about">Learn more</Link>
-          </Button>
+          <div className="flex justify-center gap-4">
+            <Button asChild variant="secondary" size="lg">
+              <Link to="/about">Learn more</Link>
+            </Button>
+            <Button asChild variant="default" size="lg">
+              <Link to="/consultation">Book a free consultation</Link>
+            </Button>
+          </div>
         </div>
       </div>
     </section>
