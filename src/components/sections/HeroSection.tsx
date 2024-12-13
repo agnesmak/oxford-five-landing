@@ -6,7 +6,9 @@ const HeroSection = () => {
       <div className="container mx-auto text-center">
         <h1 className="text-4xl md:text-6xl font-bold text-oxford-white mb-6 animate-fade-up">
           Improve Your Brand Presence Through
-          <span className="text-oxford-blue block mt-2">Actionable Insights</span>
+          <span className="block mt-2 bg-gradient-to-r from-[#0EA5E9] to-[#221F26] text-transparent bg-clip-text">
+            Actionable Insights
+          </span>
         </h1>
         <p className="text-base text-oxford-white/80 mb-8 max-w-2xl mx-auto animate-fade-up">
           As consumers embrace AI tools like ChatGPT and Google Gemini, there are challenges for traditional SEO to keep up. Our AI-SEO solutions leverage advanced benchmarks to optimize your brand's presence in the AI-driven search landscape.
