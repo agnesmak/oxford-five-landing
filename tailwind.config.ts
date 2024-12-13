@@ -25,9 +25,10 @@ export default {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         oxford: {
+          navy: "#002146",
+          blue: "#1EAEDB",
+          white: "#FFFFFF",
           dark: "#1A1F2C",
-          purple: "#9b87f5",
-          gray: "#8E9196",
         },
         primary: {
           DEFAULT: "hsl(var(--primary))",
@@ -58,6 +59,10 @@ export default {
           foreground: "hsl(var(--card-foreground))",
         },
       },
+      fontFamily: {
+        matter: ["Matter", "sans-serif"],
+        inter: ["Inter", "sans-serif"],
+      },
       keyframes: {
         "fade-up": {
           "0%": {
@@ -69,9 +74,17 @@ export default {
             transform: "translateY(0)",
           },
         },
+        "fade-in": {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        },
       },
       animation: {
         "fade-up": "fade-up 0.5s ease-out",
+        "fade-in": "fade-in 0.3s ease-out",
+      },
+      backgroundImage: {
+        'gradient-dark': 'linear-gradient(to bottom, #002146, #1A1F2C)',
       },
     },
   },
