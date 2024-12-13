@@ -62,6 +62,7 @@ export default {
       fontFamily: {
         garamond: ['EB Garamond', 'serif'],
         inter: ['Inter', 'sans-serif'],
+        gloock: ['Gloock', 'serif'],
       },
       keyframes: {
         "fade-up": {

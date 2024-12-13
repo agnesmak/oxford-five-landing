@@ -2,7 +2,7 @@ import React from 'react';
 
 const Logo = ({ className = "" }: { className?: string }) => {
   return (
-    <div className={`flex items-center ${className}`}>
+    <div className={`flex items-center gap-3 ${className}`}>
       <svg
         width="48"
         height="48"
@@ -33,6 +33,7 @@ const Logo = ({ className = "" }: { className?: string }) => {
           strokeLinejoin="round"
         />
       </svg>
+      <span className="font-gloock text-xl tracking-wide">OXFORD FIVE</span>
     </div>
   );
 };

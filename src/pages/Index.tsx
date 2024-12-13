@@ -11,14 +11,14 @@ const Index = () => {
       <section className="pt-32 pb-20 px-4">
         <div className="container mx-auto text-center">
           <h1 className="text-4xl md:text-6xl font-bold text-oxford-white mb-6 animate-fade-up">
-            Transform Your Data Into
+            Improve Your Brand Presence Through
             <span className="text-oxford-blue block mt-2">Actionable Insights</span>
           </h1>
           <p className="text-xl text-oxford-white/80 mb-8 max-w-2xl mx-auto animate-fade-up">
-            Empowering businesses with innovative marketing technology and data analytics solutions
+            As consumers embrace AI tools like ChatGPT and Google Gemini, there are challenges for traditional SEO to keep up. Our AI-SEO solutions leverage advanced benchmarks to optimize your brand's presence in the AI-driven search landscape.
           </p>
           <button className="bg-oxford-blue text-oxford-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-oxford-blue/90 transition-colors animate-fade-up">
-            Get Started
+            Book a free consultation
           </button>
         </div>
       </section>
