@@ -1,5 +1,5 @@
 import React from "react";
-import { Database, BarChart3, Globe } from "lucide-react";
+import { Database, Brain, Globe } from "lucide-react";
 import FeatureCard from "@/components/FeatureCard";
 
 const SolutionsSection = () => {
@@ -11,18 +11,18 @@ const SolutionsSection = () => {
         </h2>
         <div className="grid md:grid-cols-3 gap-6">
           <FeatureCard
-            title="Data Analytics"
-            description="Transform raw data into meaningful insights with our advanced analytics solutions"
+            title="LLM Analytics Tool"
+            description="Cutting-edge application providing data and insights regarding brand presence across various LLMs, including competitive benchmarking and trend analysis"
             Icon={Database}
           />
           <FeatureCard
-            title="Marketing Intelligence"
-            description="Make data-driven marketing decisions with our comprehensive analytics tools"
-            Icon={BarChart3}
+            title="AI Optimization Consultancy"
+            description="Provide expert guidance and strategies to enhance LLM presence, encompassing content optimization, knowledge graph integration, and LLM output management"
+            Icon={Brain}
           />
           <FeatureCard
-            title="Global Reach"
-            description="Connect with markets worldwide through our international network and expertise"
+            title="Empowerment"
+            description="Empower brands and companies to improve their LLM results page presence, enabling them to take control of their digital narrative in the age of artificial intelligence"
             Icon={Globe}
           />
         </div>
