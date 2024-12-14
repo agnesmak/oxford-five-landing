@@ -8,17 +8,13 @@ const AboutHero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-4xl md:text-6xl font-sofia font-semibold text-oxford-white text-center max-w-5xl mx-auto leading-tight"
+          className="text-3xl md:text-5xl font-sofia font-semibold text-oxford-white text-left max-w-5xl leading-tight"
         >
           We empower brands to{" "}
-          <span className="block mt-2">
-            <span className="text-[#FEF7CD] text-[120%]">
-              improve brand presence
-            </span>
+          <span className="text-[#FFD046] text-[120%] inline">
+            improve brand presence
           </span>
-          <span className="block mt-2">
-            in AI search
-          </span>
+          {" "}in AI search
         </motion.h1>
       </div>
     </section>
