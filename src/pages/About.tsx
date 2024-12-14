@@ -28,7 +28,7 @@ const About = () => {
               className="col-span-1 md:col-span-2 aspect-video rounded-xl overflow-hidden"
             >
               <img
-                src="/lovable-uploads/91f5b138-d62e-4906-8c58-3ee7492e9edf.png"
+                src="/lovable-uploads/21e4cc36-1aa1-4563-a90e-69d49e0b359d.png"
                 alt="Team collaboration"
                 className="w-full h-full object-cover"
               />
@@ -42,7 +42,7 @@ const About = () => {
               className="col-span-1 aspect-square rounded-xl overflow-hidden"
             >
               <img
-                src="/lovable-uploads/040afd7e-a35a-4a77-93a3-cea20b0b3570.png"
+                src="/lovable-uploads/f63d6220-fcb7-4f4d-9574-f297fa999b37.png"
                 alt="Team meeting"
                 className="w-full h-full object-cover"
               />
@@ -56,7 +56,7 @@ const About = () => {
               className="col-span-1 aspect-square rounded-xl overflow-hidden"
             >
               <img
-                src="/lovable-uploads/ae717bbf-8ff5-4700-afc3-af0f0537d64e.png"
+                src="/lovable-uploads/49fc3c01-f31f-4974-8a88-c90a6de1a09b.png"
                 alt="Team discussion"
                 className="w-full h-full object-cover"
               />
@@ -70,7 +70,7 @@ const About = () => {
               className="col-span-1 md:col-span-2 aspect-video rounded-xl overflow-hidden"
             >
               <img
-                src="/lovable-uploads/e9dd752d-eb96-4f94-8bae-0357c3f40bef.png"
+                src="/lovable-uploads/fa1170b5-3037-4d0e-af63-1d9ad5b2b24e.png"
                 alt="Oxford gathering"
                 className="w-full h-full object-cover"
               />
