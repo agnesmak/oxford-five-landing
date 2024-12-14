@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import Logo from "./Logo";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,11 +22,11 @@ const Navbar = () => {
 
           {/* Desktop menu */}
           <div className="hidden md:flex space-x-8">
+            <Link to="/about" className="text-oxford-white/80 hover:text-oxford-white transition-colors">
+              About
+            </Link>
             <a href="#features" className="text-oxford-white/80 hover:text-oxford-white transition-colors">
               Features
-            </a>
-            <a href="#about" className="text-oxford-white/80 hover:text-oxford-white transition-colors">
-              About
             </a>
             <a href="#contact" className="text-oxford-white/80 hover:text-oxford-white transition-colors">
               Contact
@@ -37,19 +38,19 @@ const Navbar = () => {
         {isOpen && (
           <div className="md:hidden py-4">
             <div className="flex flex-col space-y-4">
+              <Link
+                to="/about"
+                className="text-oxford-white/80 hover:text-oxford-white transition-colors"
+                onClick={() => setIsOpen(false)}
+              >
+                About
+              </Link>
               <a
                 href="#features"
                 className="text-oxford-white/80 hover:text-oxford-white transition-colors"
                 onClick={() => setIsOpen(false)}
               >
                 Features
-              </a>
-              <a
-                href="#about"
-                className="text-oxford-white/80 hover:text-oxford-white transition-colors"
-                onClick={() => setIsOpen(false)}
-              >
-                About
               </a>
               <a
                 href="#contact"
