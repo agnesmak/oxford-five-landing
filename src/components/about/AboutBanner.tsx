@@ -26,7 +26,7 @@ const AboutBanner = () => {
                 className="h-20 md:h-24 object-contain"
               />
               <img 
-                src="/lovable-uploads/said-business-school-logo.png" 
+                src="https://globalnetwork.io/sites/default/files/styles/member_school_logo_main_page/public/2019-09/SBS_LOGO_RGB_KEYLINE.png?itok=hmsskXBw" 
                 alt="Saïd Business School" 
                 className="h-20 md:h-24 object-contain"
               />
