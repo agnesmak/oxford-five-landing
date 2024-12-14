@@ -15,10 +15,7 @@ const AboutBanner = () => {
               Born from Oxford University's Excellence
             </h2>
             <p className="text-lg text-oxford-white/90 leading-relaxed">
-              Oxford Five emerged from the world's Top 10 AL/ML Exec Programmes, brining together deep expertise in AI Search technology. Our founders are industry experts in their respective domains, creating a unique blend of knowledge and innovation.
-            </p>
-            <p className="text-lg text-oxford-white/90 leading-relaxed">
-              At Oxford Five, we semalessly blend cutting-edge analytics with our expertise in marketing and customer search behaviour, empowering businesses with the tools and recommendations they need to improve their brand presence and successfully navigate through evolving AI landscape.
+              Born from a top-tier AI/ML executive program, Oxford Five combines advanced AI search technology with deep industry expertise. We help businesses elevate their brand presence through data-driven insights and AI-powered solutions, turning complex market dynamics into actionable growth strategies.
             </p>
           </div>
         </motion.div>
