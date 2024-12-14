@@ -52,7 +52,11 @@ const Index = () => {
               <h3 className="text-oxford-white text-lg font-bold mb-4">Services</h3>
               <ul className="space-y-2">
                 <li>
-                  <Link to="/consultation" className="text-oxford-white/60 hover:text-oxford-white transition-colors">
+                  <Link 
+                    to="/consultation" 
+                    target="_blank"
+                    className="text-oxford-white/60 hover:text-oxford-white transition-colors"
+                  >
                     Book a Free Consultation
                   </Link>
                 </li>
