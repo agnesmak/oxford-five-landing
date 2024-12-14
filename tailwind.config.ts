@@ -60,6 +60,7 @@ export default {
         },
       },
       fontFamily: {
+        'sofia': ['sofia-pro', 'sans-serif'],
         garamond: ['EB Garamond', 'serif'],
         inter: ['Inter', 'sans-serif'],
         gloock: ['Gloock', 'serif'],
@@ -79,10 +80,15 @@ export default {
           "0%": { opacity: "0" },
           "100%": { opacity: "1" },
         },
+        confetti: {
+          "0%": { transform: "translateY(0) rotate(0deg)" },
+          "100%": { transform: "translateY(100vh) rotate(360deg)" }
+        }
       },
       animation: {
         "fade-up": "fade-up 0.5s ease-out",
         "fade-in": "fade-in 0.3s ease-out",
+        "confetti": "confetti 3s ease-in-out forwards"
       },
       backgroundImage: {
         'gradient-dark': 'linear-gradient(to bottom, #002146, #1A1F2C)',

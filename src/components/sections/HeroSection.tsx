@@ -4,9 +4,9 @@ const HeroSection = () => {
   return (
     <section className="pt-32 pb-20 px-4">
       <div className="container mx-auto text-center">
-        <h1 className="text-4xl md:text-6xl font-bold text-oxford-white mb-6 animate-fade-up">
+        <h1 className="text-4xl md:text-6xl font-sofia font-semibold text-oxford-white mb-6 animate-fade-up">
           Improve Your Brand Presence Through
-          <span className="block mt-2 bg-gradient-to-r from-[#0EA5E9] to-[#221F26] text-transparent bg-clip-text">
+          <span className="block mt-2 text-[#0065FF]">
             Actionable Insights
           </span>
         </h1>

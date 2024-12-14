@@ -7,7 +7,7 @@ const AboutSection = () => {
     <section id="about" className="py-20 px-4 bg-oxford-navy/50">
       <div className="container mx-auto">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-oxford-white">About Us</h2>
+          <h2 className="text-3xl md:text-4xl font-sofia font-semibold mb-6 text-oxford-white">About Us</h2>
           <p className="text-lg text-oxford-white/80 mb-8">
             Born from the professional AI program of Oxford University, Oxford Five brings together world-class expertise in AI and search technology.
             
@@ -17,8 +17,8 @@ const AboutSection = () => {
             <Button asChild variant="secondary" size="lg">
               <Link to="/about">Learn more</Link>
             </Button>
-            <Button asChild variant="default" size="lg">
-              <Link to="/consultation">Book a free consultation</Link>
+            <Button asChild className="bg-gradient-to-r from-[#045EEC] to-[#0F2D6E] hover:opacity-90" size="lg">
+              <Link to="/consultation" target="_blank">Book a free consultation</Link>
             </Button>
           </div>
         </div>
