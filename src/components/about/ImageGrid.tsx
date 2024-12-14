@@ -73,8 +73,8 @@ const ImageGrid = () => {
             className="col-span-1 md:col-span-1 aspect-square rounded-xl overflow-hidden hover:scale-[1.02] transition-transform duration-300"
           >
             <img
-              src="/lovable-uploads/ae717bbf-8ff5-4700-afc3-af0f0537d64e.png"
-              alt="Team brainstorming"
+              src="/lovable-uploads/128e48fe-2bcf-4328-865d-9867e4801f01.png"
+              alt="Team members"
               className="w-full h-full object-cover"
             />
           </motion.div>
