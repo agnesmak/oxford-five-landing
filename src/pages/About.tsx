@@ -1,35 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Navbar from "@/components/Navbar";
 import { motion } from "framer-motion";
-import { ChevronLeft, ChevronRight } from "lucide-react";
-
-const images = [
-  "/lovable-uploads/e64f7f17-d9aa-44fe-8af4-7504fabd1e35.png",
-  "/lovable-uploads/f59b77e7-f59e-4cb2-bd82-001fb9371229.png",
-  "/lovable-uploads/1b6b9242-e631-49b6-8c13-248e4cbba706.png",
-  "/lovable-uploads/cb54b827-fce7-440f-8001-a1413b191739.png",
-  "/lovable-uploads/027b0670-59e2-4c5e-b943-b97464afe1ee.png"
-];
 
 const About = () => {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentImageIndex((prev) => (prev + 1) % images.length);
-    }, 5000);
-
-    return () => clearInterval(timer);
-  }, []);
-
-  const nextImage = () => {
-    setCurrentImageIndex((prev) => (prev + 1) % images.length);
-  };
-
-  const prevImage = () => {
-    setCurrentImageIndex((prev) => (prev - 1 + images.length) % images.length);
-  };
-
   return (
     <div className="min-h-screen bg-gradient-dark">
       <Navbar />
@@ -43,40 +16,65 @@ const About = () => {
         </div>
       </section>
 
-      {/* Photo Slideshow Section */}
+      {/* Bento Grid Section */}
       <section className="py-20 bg-oxford-navy/30">
         <div className="container mx-auto px-4">
-          <div className="relative max-w-4xl mx-auto">
-            <div className="aspect-w-16 aspect-h-9 rounded-xl overflow-hidden">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-6xl mx-auto">
+            {/* Large image 1 */}
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              className="col-span-1 md:col-span-2 aspect-video rounded-xl overflow-hidden"
+            >
               <img
-                src={images[currentImageIndex]}
-                alt="Team at Oxford"
+                src="/lovable-uploads/91f5b138-d62e-4906-8c58-3ee7492e9edf.png"
+                alt="Team collaboration"
                 className="w-full h-full object-cover"
               />
-            </div>
-            <button
-              onClick={prevImage}
-              className="absolute left-4 top-1/2 -translate-y-1/2 bg-oxford-white/20 hover:bg-oxford-white/30 p-2 rounded-full backdrop-blur-sm transition-colors"
+            </motion.div>
+
+            {/* Small image 1 */}
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="col-span-1 aspect-square rounded-xl overflow-hidden"
             >
-              <ChevronLeft className="text-oxford-white" size={24} />
-            </button>
-            <button
-              onClick={nextImage}
-              className="absolute right-4 top-1/2 -translate-y-1/2 bg-oxford-white/20 hover:bg-oxford-white/30 p-2 rounded-full backdrop-blur-sm transition-colors"
+              <img
+                src="/lovable-uploads/040afd7e-a35a-4a77-93a3-cea20b0b3570.png"
+                alt="Team meeting"
+                className="w-full h-full object-cover"
+              />
+            </motion.div>
+
+            {/* Small image 2 */}
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+              className="col-span-1 aspect-square rounded-xl overflow-hidden"
             >
-              <ChevronRight className="text-oxford-white" size={24} />
-            </button>
-            <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
-              {images.map((_, index) => (
-                <button
-                  key={index}
-                  onClick={() => setCurrentImageIndex(index)}
-                  className={`w-2 h-2 rounded-full transition-colors ${
-                    index === currentImageIndex ? "bg-oxford-white" : "bg-oxford-white/40"
-                  }`}
-                />
-              ))}
-            </div>
+              <img
+                src="/lovable-uploads/ae717bbf-8ff5-4700-afc3-af0f0537d64e.png"
+                alt="Team discussion"
+                className="w-full h-full object-cover"
+              />
+            </motion.div>
+
+            {/* Large image 2 */}
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+              className="col-span-1 md:col-span-2 aspect-video rounded-xl overflow-hidden"
+            >
+              <img
+                src="/lovable-uploads/e9dd752d-eb96-4f94-8bae-0357c3f40bef.png"
+                alt="Oxford gathering"
+                className="w-full h-full object-cover"
+              />
+            </motion.div>
           </div>
         </div>
       </section>
