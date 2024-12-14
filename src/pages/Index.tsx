@@ -5,9 +5,16 @@ import VisionSection from "@/components/sections/VisionSection";
 import FeaturesSection from "@/components/sections/FeaturesSection";
 import SolutionsSection from "@/components/sections/SolutionsSection";
 import AboutSection from "@/components/sections/AboutSection";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Index = () => {
+  const navigate = useNavigate();
+
+  const handleAboutClick = () => {
+    navigate('/about');
+    window.scrollTo(0, 0);
+  };
+
   return (
     <div className="min-h-screen bg-gradient-dark">
       <Navbar />
@@ -25,14 +32,14 @@ const Index = () => {
               <h3 className="text-oxford-white text-lg font-bold mb-4">Company</h3>
               <ul className="space-y-2">
                 <li>
-                  <Link to="/about" className="text-oxford-white/60 hover:text-oxford-white transition-colors">
+                  <button onClick={handleAboutClick} className="text-oxford-white/60 hover:text-oxford-white transition-colors">
                     About Us
-                  </Link>
+                  </button>
                 </li>
                 <li>
-                  <Link to="/blog" className="text-oxford-white/60 hover:text-oxford-white transition-colors">
-                    Blog
-                  </Link>
+                  <span className="text-oxford-white/60 cursor-not-allowed">
+                    Blog (coming soon)
+                  </span>
                 </li>
                 <li>
                   <a 
@@ -79,6 +86,7 @@ const Index = () => {
                 </li>
               </ul>
             </div>
+
           </div>
 
           <div className="border-t border-oxford-white/10 mt-12 pt-8 text-center">

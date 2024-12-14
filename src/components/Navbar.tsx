@@ -1,16 +1,29 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import Logo from "./Logo";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
+
+  const handleLogoClick = () => {
+    navigate('/');
+    window.scrollTo(0, 0);
+  };
+
+  const handleAboutClick = (e: React.MouseEvent) => {
+    navigate('/about');
+    window.scrollTo(0, 0);
+  };
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-oxford-navy/80 backdrop-blur-sm border-b border-oxford-white/10">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
-          <Logo className="text-oxford-white" />
+          <div onClick={handleLogoClick} className="cursor-pointer">
+            <Logo className="text-oxford-white" />
+          </div>
           
           {/* Mobile menu button */}
           <button
@@ -22,9 +35,9 @@ const Navbar = () => {
 
           {/* Desktop menu */}
           <div className="hidden md:flex space-x-8">
-            <Link to="/about" className="text-oxford-white/80 hover:text-oxford-white transition-colors">
+            <button onClick={handleAboutClick} className="text-oxford-white/80 hover:text-oxford-white transition-colors">
               About
-            </Link>
+            </button>
             <a href="#features" className="text-oxford-white/80 hover:text-oxford-white transition-colors">
               Features
             </a>
@@ -38,13 +51,12 @@ const Navbar = () => {
         {isOpen && (
           <div className="md:hidden py-4">
             <div className="flex flex-col space-y-4">
-              <Link
-                to="/about"
-                className="text-oxford-white/80 hover:text-oxford-white transition-colors"
-                onClick={() => setIsOpen(false)}
+              <button
+                onClick={handleAboutClick}
+                className="text-oxford-white/80 hover:text-oxford-white transition-colors text-left"
               >
                 About
-              </Link>
+              </button>
               <a
                 href="#features"
                 className="text-oxford-white/80 hover:text-oxford-white transition-colors"

@@ -7,7 +7,7 @@ const ImageGrid = () => {
   const isInView = useInView(ref, { once: true });
 
   return (
-    <section ref={ref} className="py-20 bg-oxford-navy/30">
+    <section ref={ref} className="py-16 bg-oxford-navy/30">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
           {/* Large image 1 */}
@@ -38,30 +38,30 @@ const ImageGrid = () => {
             />
           </motion.div>
 
-          {/* Small image 2 */}
+          {/* New team planning image */}
           <motion.div 
             initial={{ opacity: 0, x: -100 }}
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -100 }}
             transition={{ duration: 0.8, delay: 0.6 }}
+            className="col-span-1 md:col-span-2 aspect-video rounded-xl overflow-hidden hover:scale-[1.02] transition-transform duration-300"
+          >
+            <img
+              src="/lovable-uploads/10730d96-91d6-4c49-8785-c36e5fe9873e.png"
+              alt="Team planning session"
+              className="w-full h-full object-cover"
+            />
+          </motion.div>
+
+          {/* Small image 2 */}
+          <motion.div 
+            initial={{ opacity: 0, x: 100 }}
+            animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 100 }}
+            transition={{ duration: 0.8, delay: 0.8 }}
             className="col-span-1 aspect-square rounded-xl overflow-hidden hover:scale-[1.02] transition-transform duration-300"
           >
             <img
               src="/lovable-uploads/49fc3c01-f31f-4974-8a88-c90a6de1a09b.png"
               alt="Team discussion"
-              className="w-full h-full object-cover"
-            />
-          </motion.div>
-
-          {/* Large image 2 */}
-          <motion.div 
-            initial={{ opacity: 0, x: 100 }}
-            animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 100 }}
-            transition={{ duration: 0.8, delay: 0.8 }}
-            className="col-span-1 md:col-span-2 aspect-video rounded-xl overflow-hidden hover:scale-[1.02] transition-transform duration-300"
-          >
-            <img
-              src="/lovable-uploads/fa1170b5-3037-4d0e-af63-1d9ad5b2b24e.png"
-              alt="Oxford gathering"
               className="w-full h-full object-cover"
             />
           </motion.div>
