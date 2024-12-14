@@ -19,12 +19,7 @@ const AboutBanner = () => {
                 Born from a top-tier AI/ML executive program, Oxford Five combines advanced AI search technology with deep industry expertise. We help businesses elevate their brand presence through data-driven insights and AI-powered solutions, turning complex market dynamics into actionable growth strategies.
               </p>
             </div>
-            <div className="flex items-center gap-6">
-              <img 
-                src="/lovable-uploads/oxford-university-logo.png" 
-                alt="University of Oxford" 
-                className="h-20 md:h-24 object-contain"
-              />
+            <div className="flex items-center">
               <img 
                 src="https://globalnetwork.io/sites/default/files/styles/member_school_logo_main_page/public/2019-09/SBS_LOGO_RGB_KEYLINE.png?itok=hmsskXBw" 
                 alt="Saïd Business School" 

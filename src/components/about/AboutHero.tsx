@@ -8,7 +8,7 @@ const AboutHero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-3xl md:text-5xl font-sofia font-semibold text-oxford-white text-left max-w-5xl leading-tight"
+          className="text-2xl md:text-4xl font-sofia font-semibold text-oxford-white text-left leading-tight"
         >
           We empower brands to{" "}
           <span className="text-[#FFD046] text-[120%] inline">
