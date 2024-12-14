@@ -38,12 +38,12 @@ const ImageGrid = () => {
             />
           </motion.div>
 
-          {/* New team planning image */}
+          {/* Middle row with two equal-sized images */}
           <motion.div 
             initial={{ opacity: 0, x: -100 }}
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -100 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="col-span-1 md:col-span-2 aspect-video rounded-xl overflow-hidden hover:scale-[1.02] transition-transform duration-300"
+            className="col-span-1 aspect-video rounded-xl overflow-hidden hover:scale-[1.02] transition-transform duration-300"
           >
             <img
               src="/lovable-uploads/10730d96-91d6-4c49-8785-c36e5fe9873e.png"
@@ -52,16 +52,29 @@ const ImageGrid = () => {
             />
           </motion.div>
 
-          {/* Small image 2 */}
           <motion.div 
             initial={{ opacity: 0, x: 100 }}
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 100 }}
             transition={{ duration: 0.8, delay: 0.8 }}
-            className="col-span-1 aspect-square rounded-xl overflow-hidden hover:scale-[1.02] transition-transform duration-300"
+            className="col-span-1 aspect-video rounded-xl overflow-hidden hover:scale-[1.02] transition-transform duration-300"
           >
             <img
               src="/lovable-uploads/49fc3c01-f31f-4974-8a88-c90a6de1a09b.png"
               alt="Team discussion"
+              className="w-full h-full object-cover"
+            />
+          </motion.div>
+
+          {/* New fifth image */}
+          <motion.div 
+            initial={{ opacity: 0 }}
+            animate={isInView ? { opacity: 1 } : { opacity: 0 }}
+            transition={{ duration: 0.8, delay: 1.0 }}
+            className="col-span-1 md:col-span-1 aspect-square rounded-xl overflow-hidden hover:scale-[1.02] transition-transform duration-300"
+          >
+            <img
+              src="/lovable-uploads/ae717bbf-8ff5-4700-afc3-af0f0537d64e.png"
+              alt="Team brainstorming"
               className="w-full h-full object-cover"
             />
           </motion.div>

@@ -10,11 +10,7 @@ const AboutHero = () => {
           transition={{ duration: 0.6 }}
           className="text-2xl md:text-4xl font-sofia font-semibold text-oxford-white text-center leading-tight"
         >
-          We empower brands to{" "}
-          <span className="text-[#FFD046] text-[120%] inline">
-            improve brand presence
-          </span>
-          {" "}in AI search
+          We empower businesses to improve brand presence in AI search
         </motion.h1>
       </div>
     </section>

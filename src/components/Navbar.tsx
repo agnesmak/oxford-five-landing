@@ -36,7 +36,7 @@ const Navbar = () => {
           {/* Desktop menu */}
           <div className="hidden md:flex space-x-8">
             <button onClick={handleAboutClick} className="text-oxford-white/80 hover:text-oxford-white transition-colors">
-              About
+              About Us
             </button>
             <a href="#features" className="text-oxford-white/80 hover:text-oxford-white transition-colors">
               Features
@@ -55,7 +55,7 @@ const Navbar = () => {
                 onClick={handleAboutClick}
                 className="text-oxford-white/80 hover:text-oxford-white transition-colors text-left"
               >
-                About
+                About Us
               </button>
               <a
                 href="#features"
