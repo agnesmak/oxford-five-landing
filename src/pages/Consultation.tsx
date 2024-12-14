@@ -5,6 +5,13 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+import {
   Form,
   FormControl,
   FormField,
@@ -17,6 +24,7 @@ type FormData = {
   firstName: string;
   lastName: string;
   email: string;
+  country: string;
   organization?: string;
   industry?: string;
   linkedIn?: string;
@@ -32,6 +40,30 @@ const Consultation = () => {
     navigate("/success");
   };
 
+  const countries = [
+    "United States",
+    "United Kingdom",
+    "Canada",
+    "Australia",
+    "New Zealand",
+    "Singapore",
+    "Hong Kong",
+    "Japan",
+    "South Korea",
+    "India",
+    "Germany",
+    "France",
+    "Italy",
+    "Spain",
+    "Netherlands",
+    "Sweden",
+    "Norway",
+    "Denmark",
+    "Finland",
+    "Switzerland",
+    // Add more countries as needed
+  ];
+
   return (
     <div className="min-h-screen bg-gradient-dark py-20 px-4">
       <div className="container max-w-2xl mx-auto">
@@ -46,7 +78,7 @@ const Consultation = () => {
                 rules={{ required: "First name is required" }}
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>First Name *</FormLabel>
+                    <FormLabel className="text-black">First Name *</FormLabel>
                     <FormControl>
                       <Input {...field} />
                     </FormControl>
@@ -61,7 +93,7 @@ const Consultation = () => {
                 rules={{ required: "Last name is required" }}
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Last Name *</FormLabel>
+                    <FormLabel className="text-black">Last Name *</FormLabel>
                     <FormControl>
                       <Input {...field} />
                     </FormControl>
@@ -83,7 +115,7 @@ const Consultation = () => {
               }}
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Email *</FormLabel>
+                  <FormLabel className="text-black">Email *</FormLabel>
                   <FormControl>
                     <Input type="email" {...field} />
                   </FormControl>
@@ -94,10 +126,36 @@ const Consultation = () => {
 
             <FormField
               control={form.control}
+              name="country"
+              rules={{ required: "Location / Country is required" }}
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel className="text-black">Location / Country *</FormLabel>
+                  <Select onValueChange={field.onChange} defaultValue={field.value}>
+                    <FormControl>
+                      <SelectTrigger>
+                        <SelectValue placeholder="Select your country" />
+                      </SelectTrigger>
+                    </FormControl>
+                    <SelectContent>
+                      {countries.map((country) => (
+                        <SelectItem key={country} value={country}>
+                          {country}
+                        </SelectItem>
+                      ))}
+                    </SelectContent>
+                  </Select>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+
+            <FormField
+              control={form.control}
               name="organization"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Organization</FormLabel>
+                  <FormLabel className="text-black">Organization</FormLabel>
                   <FormControl>
                     <Input {...field} />
                   </FormControl>
@@ -111,7 +169,7 @@ const Consultation = () => {
               name="industry"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Industry</FormLabel>
+                  <FormLabel className="text-black">Industry</FormLabel>
                   <FormControl>
                     <Input {...field} />
                   </FormControl>
@@ -125,7 +183,7 @@ const Consultation = () => {
               name="linkedIn"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>LinkedIn Profile URL</FormLabel>
+                  <FormLabel className="text-black">LinkedIn Profile URL</FormLabel>
                   <FormControl>
                     <Input {...field} />
                   </FormControl>
@@ -140,12 +198,12 @@ const Consultation = () => {
               rules={{ required: "Please leave a message" }}
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Message *</FormLabel>
+                  <FormLabel className="text-black">Message *</FormLabel>
                   <FormControl>
                     <Textarea 
                       {...field}
                       className="min-h-[120px]"
-                      placeholder="Tell us about your needs..."
+                      placeholder="Tell us how you would want us to help with your brand and marketing strategies / Share with us your key challenges and SEO efforts regarding the impact of AI on customer search behavior."
                     />
                   </FormControl>
                   <FormMessage />
