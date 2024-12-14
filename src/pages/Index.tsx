@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/sections/HeroSection";
 import VisionSection from "@/components/sections/VisionSection";
+import DashboardPreview from "@/components/sections/DashboardPreview";
 import FeaturesSection from "@/components/sections/FeaturesSection";
 import SolutionsSection from "@/components/sections/SolutionsSection";
 import AboutSection from "@/components/sections/AboutSection";
@@ -19,6 +20,7 @@ const Index = () => {
     <div className="min-h-screen bg-gradient-dark">
       <Navbar />
       <HeroSection />
+      <DashboardPreview />
       <VisionSection />
       <FeaturesSection />
       <SolutionsSection />
