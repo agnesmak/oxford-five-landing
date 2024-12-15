@@ -43,7 +43,7 @@ const ImageGrid = () => {
             initial={{ opacity: 0, x: -100 }}
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -100 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="col-span-1 aspect-video rounded-xl overflow-hidden hover:scale-[1.02] transition-transform duration-300"
+            className="col-span-1 aspect-[4/3] rounded-xl overflow-hidden hover:scale-[1.02] transition-transform duration-300"
           >
             <img
               src="/lovable-uploads/10730d96-91d6-4c49-8785-c36e5fe9873e.png"
@@ -56,7 +56,7 @@ const ImageGrid = () => {
             initial={{ opacity: 0, x: 100 }}
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 100 }}
             transition={{ duration: 0.8, delay: 0.8 }}
-            className="col-span-1 aspect-video rounded-xl overflow-hidden hover:scale-[1.02] transition-transform duration-300"
+            className="col-span-1 aspect-[4/3] rounded-xl overflow-hidden hover:scale-[1.02] transition-transform duration-300"
           >
             <img
               src="/lovable-uploads/49fc3c01-f31f-4974-8a88-c90a6de1a09b.png"
@@ -65,12 +65,12 @@ const ImageGrid = () => {
             />
           </motion.div>
 
-          {/* New fifth image */}
+          {/* Wider last image */}
           <motion.div 
             initial={{ opacity: 0 }}
             animate={isInView ? { opacity: 1 } : { opacity: 0 }}
             transition={{ duration: 0.8, delay: 1.0 }}
-            className="col-span-1 md:col-span-1 aspect-square rounded-xl overflow-hidden hover:scale-[1.02] transition-transform duration-300"
+            className="col-span-1 md:col-span-1 aspect-[16/9] rounded-xl overflow-hidden hover:scale-[1.02] transition-transform duration-300"
           >
             <img
               src="/lovable-uploads/128e48fe-2bcf-4328-865d-9867e4801f01.png"
