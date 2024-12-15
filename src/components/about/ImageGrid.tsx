@@ -10,12 +10,12 @@ const ImageGrid = () => {
     <section ref={ref} className="py-16 bg-oxford-navy/30">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-          {/* Large image 1 */}
+          {/* Large image 1 - slightly narrower */}
           <motion.div 
             initial={{ opacity: 0, x: -100 }}
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -100 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="col-span-1 md:col-span-2 aspect-video rounded-xl overflow-hidden hover:scale-[1.02] transition-transform duration-300"
+            className="col-span-1 md:col-span-1 aspect-video rounded-xl overflow-hidden hover:scale-[1.02] transition-transform duration-300"
           >
             <img
               src="/lovable-uploads/21e4cc36-1aa1-4563-a90e-69d49e0b359d.png"
@@ -24,12 +24,12 @@ const ImageGrid = () => {
             />
           </motion.div>
 
-          {/* Small image 1 */}
+          {/* Small image 1 - wider */}
           <motion.div 
             initial={{ opacity: 0, x: 100 }}
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 100 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="col-span-1 aspect-square rounded-xl overflow-hidden hover:scale-[1.02] transition-transform duration-300"
+            className="col-span-1 md:col-span-2 aspect-video rounded-xl overflow-hidden hover:scale-[1.02] transition-transform duration-300"
           >
             <img
               src="/lovable-uploads/f63d6220-fcb7-4f4d-9574-f297fa999b37.png"
@@ -38,7 +38,7 @@ const ImageGrid = () => {
             />
           </motion.div>
 
-          {/* Middle row with two equal-sized images */}
+          {/* Second row images */}
           <motion.div 
             initial={{ opacity: 0, x: -100 }}
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -100 }}
@@ -70,7 +70,7 @@ const ImageGrid = () => {
             initial={{ opacity: 0 }}
             animate={isInView ? { opacity: 1 } : { opacity: 0 }}
             transition={{ duration: 0.8, delay: 1.0 }}
-            className="col-span-1 md:col-span-1 aspect-[16/9] rounded-xl overflow-hidden hover:scale-[1.02] transition-transform duration-300"
+            className="col-span-1 aspect-[16/9] rounded-xl overflow-hidden hover:scale-[1.02] transition-transform duration-300"
           >
             <img
               src="/lovable-uploads/128e48fe-2bcf-4328-865d-9867e4801f01.png"
