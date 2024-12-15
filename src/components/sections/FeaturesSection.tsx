@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const FeaturesSection = () => {
   return (
@@ -19,15 +20,44 @@ const FeaturesSection = () => {
               Engage Oxford Five to not just see where you stand, but also get the roadmap to dominate.
             </p>
           </div>
-          <div className="relative animate-fade-in">
-            <div className="aspect-video rounded-xl overflow-hidden bg-oxford-navy/30 backdrop-blur-sm border border-oxford-white/10 p-6">
-              <img
+          <motion.div 
+            className="relative"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ 
+              opacity: 1, 
+              y: 0,
+              transition: {
+                duration: 0.8,
+                ease: "easeOut"
+              }
+            }}
+          >
+            <motion.div 
+              className="aspect-video rounded-xl overflow-hidden bg-oxford-navy/30 backdrop-blur-sm border border-oxford-white/10 p-6"
+              animate={{ 
+                boxShadow: ["0px 0px 0px rgba(30,174,219,0)", "0px 0px 20px rgba(30,174,219,0.3)", "0px 0px 0px rgba(30,174,219,0)"],
+              }}
+              transition={{
+                duration: 3,
+                repeat: Infinity,
+                ease: "easeInOut"
+              }}
+            >
+              <motion.img
                 src="/lovable-uploads/a7c075d2-cb38-4638-b77c-d654211ffbf7.png"
                 alt="AI Chat Interface"
                 className="w-full h-full object-contain rounded-lg"
+                animate={{
+                  scale: [1, 1.02, 1],
+                }}
+                transition={{
+                  duration: 4,
+                  repeat: Infinity,
+                  ease: "easeInOut"
+                }}
               />
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         </div>
       </div>
     </section>
