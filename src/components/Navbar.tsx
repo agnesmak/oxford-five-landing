@@ -38,9 +38,13 @@ const Navbar = () => {
             <button onClick={handleAboutClick} className="text-oxford-white/80 hover:text-oxford-white transition-colors">
               About Us
             </button>
-            <a href="#contact" className="text-oxford-white/80 hover:text-oxford-white transition-colors">
-              Contact
-            </a>
+            <Link 
+              to="/consultation" 
+              target="_blank"
+              className="text-oxford-white/80 hover:text-oxford-white transition-colors"
+            >
+              Book a free consultation
+            </Link>
           </div>
         </div>
 
@@ -54,13 +58,14 @@ const Navbar = () => {
               >
                 About Us
               </button>
-              <a
-                href="#contact"
+              <Link
+                to="/consultation"
+                target="_blank"
                 className="text-oxford-white/80 hover:text-oxford-white transition-colors"
                 onClick={() => setIsOpen(false)}
               >
-                Contact
-              </a>
+                Book a free consultation
+              </Link>
             </div>
           </div>
         )}
