@@ -11,7 +11,7 @@ const DashboardPreview = () => {
           className="rounded-2xl overflow-hidden shadow-2xl hover:shadow-3xl transition-shadow duration-300"
         >
           <img
-            src="/lovable-uploads/88ecf396-fe63-43fb-8a3d-4129c4168ee9.png"
+            src="/lovable-uploads/027b0670-59e2-4c5e-b943-b97464afe1ee.png"
             alt="AI Marketing Intelligence Dashboard"
             className="w-full h-auto"
           />
