@@ -8,7 +8,7 @@ const FeaturesSection = () => {
           <div className="space-y-8">
             <h2 className="text-3xl md:text-4xl font-bold text-oxford-white text-left">
               You need <span className="line-through text-oxford-white/50">SEO</span>{" "}
-              <span className="font-garamond text-oxford-blue no-underline">AI-SEO</span> to maintain 
+              <span className="font-inter text-oxford-blue no-underline">AI-SEO</span> to maintain 
               your brand presence in AI-Powered Search
             </h2>
             <p className="text-oxford-white/80 text-base leading-relaxed text-left">
@@ -22,9 +22,9 @@ const FeaturesSection = () => {
           <div className="relative animate-fade-in">
             <div className="aspect-video rounded-xl overflow-hidden bg-oxford-navy/30 backdrop-blur-sm border border-oxford-white/10 p-6">
               <img
-                src="/placeholder.svg"
-                alt="Analytics Dashboard Mockup"
-                className="w-full h-full object-cover rounded-lg"
+                src="/lovable-uploads/a7c075d2-cb38-4638-b77c-d654211ffbf7.png"
+                alt="AI Chat Interface"
+                className="w-full h-full object-contain rounded-lg"
               />
             </div>
           </div>
