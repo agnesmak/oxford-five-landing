@@ -17,8 +17,8 @@ const ImageGrid = () => {
             className="w-full rounded-xl overflow-hidden hover:scale-[1.02] transition-transform duration-300"
           >
             <img
-              src="/lovable-uploads/0aabb341-150b-4905-86e5-1dc944b49cbf.png"
-              alt="Oxford V Team"
+              src="/lovable-uploads/18dbae4d-1674-4a17-aeb7-9e646b02262a.png"
+              alt="Oxford V Team and Activities"
               className="w-full h-full object-cover"
             />
           </motion.div>
