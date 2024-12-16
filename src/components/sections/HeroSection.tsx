@@ -19,14 +19,14 @@ const HeroSection = () => {
       setTimeout(() => {
         setCurrentPhraseIndex((prevIndex) => (prevIndex + 1) % phrases.length);
         setIsVisible(true);
-      }, 500); // Wait for fade out before changing text
-    }, 3000); // Change every 3 seconds
+      }, 500);
+    }, 3000);
 
     return () => clearInterval(intervalId);
   }, []);
 
   return (
-    <section className="pt-32 pb-20 px-4">
+    <section aria-label="Hero" className="pt-32 pb-20 px-4">
       <div className="container mx-auto text-center">
         <h1 className="text-4xl md:text-6xl font-sofia font-semibold text-oxford-white mb-6 animate-fade-up">
           Improve Your Brand Presence Through
@@ -34,6 +34,7 @@ const HeroSection = () => {
             className={`block mt-2 text-[#0065FF] transition-opacity duration-500 ${
               isVisible ? 'opacity-100' : 'opacity-0'
             }`}
+            aria-live="polite"
           >
             {phrases[currentPhraseIndex]}
           </span>
@@ -45,6 +46,7 @@ const HeroSection = () => {
           to="/consultation" 
           target="_blank"
           className="inline-block bg-gradient-to-r from-[#045EEC] to-[#0F2D6E] text-oxford-white px-8 py-3 rounded-lg text-lg font-semibold hover:opacity-90 transition-opacity animate-fade-up"
+          aria-label="Book a free consultation"
         >
           Book a free consultation
         </Link>

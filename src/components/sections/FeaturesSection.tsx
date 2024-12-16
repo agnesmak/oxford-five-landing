@@ -1,8 +1,33 @@
 import React from "react";
 
 const FeaturesSection = () => {
+  // Add structured data for SEO
+  React.useEffect(() => {
+    const structuredData = {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "AI-SEO Optimization",
+      "provider": {
+        "@type": "Organization",
+        "name": "Oxford Five",
+        "description": "AI-SEO optimization services"
+      },
+      "serviceType": "SEO Optimization",
+      "description": "AI-powered SEO optimization services for modern search"
+    };
+
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.text = JSON.stringify(structuredData);
+    document.head.appendChild(script);
+
+    return () => {
+      document.head.removeChild(script);
+    };
+  }, []);
+
   return (
-    <section id="features" className="py-20 px-4">
+    <section id="features" aria-label="Features" className="py-20 px-4">
       <div className="container mx-auto">
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <div className="space-y-8">
@@ -23,7 +48,7 @@ const FeaturesSection = () => {
             <div className="aspect-video rounded-xl overflow-hidden bg-oxford-navy/30 backdrop-blur-sm p-6">
               <img
                 src="/lovable-uploads/bb5dfdc2-e1da-453f-82c5-97b14109351b.png"
-                alt="Modern Search Interface"
+                alt="Modern Search Interface visualization showing AI-powered search results"
                 className="w-full h-full object-cover rounded-lg"
               />
             </div>
