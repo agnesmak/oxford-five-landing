@@ -8,6 +8,7 @@ const Logo = ({ className = "" }: { className?: string }) => {
         alt="Oxford Five Logo" 
         className="h-12 w-auto"
       />
+      <span className="font-gloock text-xl tracking-[0.2em] uppercase">Oxford Five</span>
     </div>
   );
 };
