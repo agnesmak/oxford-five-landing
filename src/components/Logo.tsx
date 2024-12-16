@@ -11,30 +11,38 @@ const Logo = ({ className = "" }: { className?: string }) => {
         xmlns="http://www.w3.org/2000/svg"
         className="h-8"
       >
-        {/* Outer circle (O shape) */}
-        <circle cx="24" cy="24" r="20" stroke="currentColor" strokeWidth="2" fill="none" />
+        {/* Elegant outer circle */}
+        <circle 
+          cx="24" 
+          cy="24" 
+          r="22" 
+          stroke="currentColor" 
+          strokeWidth="1.5" 
+          fill="none" 
+        />
         
-        {/* Analytics bars forming a V pattern */}
-        <rect x="16" y="18" width="3" height="12" fill="currentColor" />
-        <rect x="21" y="15" width="3" height="18" fill="currentColor" />
-        <rect x="26" y="20" width="3" height="10" fill="currentColor" />
-        <rect x="31" y="17" width="3" height="14" fill="currentColor" />
+        {/* Refined analytics bars */}
+        <rect x="16" y="18" width="2" height="14" rx="1" fill="currentColor" />
+        <rect x="22" y="14" width="2" height="20" rx="1" fill="currentColor" />
+        <rect x="28" y="20" width="2" height="12" rx="1" fill="currentColor" />
+        <rect x="34" y="16" width="2" height="16" rx="1" fill="currentColor" />
         
-        {/* Connecting dots for data visualization */}
-        <circle cx="17.5" cy="18" r="1.5" fill="currentColor" />
-        <circle cx="22.5" cy="15" r="1.5" fill="currentColor" />
-        <circle cx="27.5" cy="20" r="1.5" fill="currentColor" />
-        <circle cx="32.5" cy="17" r="1.5" fill="currentColor" />
+        {/* Subtle data points */}
+        <circle cx="17" cy="18" r="1" fill="currentColor" />
+        <circle cx="23" cy="14" r="1" fill="currentColor" />
+        <circle cx="29" cy="20" r="1" fill="currentColor" />
+        <circle cx="35" cy="16" r="1" fill="currentColor" />
         
-        {/* Subtle connecting lines */}
+        {/* Elegant connecting line */}
         <path
-          d="M17.5 18L22.5 15L27.5 20L32.5 17"
+          d="M17 18C17 18 23 14 23 14C23 14 29 20 29 20C29 20 35 16 35 16"
           stroke="currentColor"
-          strokeWidth="1"
-          strokeDasharray="2 2"
+          strokeWidth="0.75"
+          strokeLinecap="round"
+          fill="none"
         />
       </svg>
-      <span className="font-gloock text-xl tracking-wide">OXFORD FIVE</span>
+      <span className="font-gloock text-xl tracking-wider">OXFORD FIVE</span>
     </div>
   );
 };
