@@ -91,7 +91,7 @@ export default {
         "confetti": "confetti 3s ease-in-out forwards"
       },
       backgroundImage: {
-        'gradient-dark': 'linear-gradient(to bottom, #002146, #1A1F2C)',
+        'gradient-dark': 'linear-gradient(to bottom, #002146, #002146)',
       },
     },
   },

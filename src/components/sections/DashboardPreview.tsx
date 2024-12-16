@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const DashboardPreview = () => {
   return (
-    <div className="relative -mt-20 mb-[-100px] z-10 px-4">
+    <div className="relative -mt-20 mb-[-100px] z-10">
       <div className="container mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
