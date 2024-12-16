@@ -12,7 +12,7 @@ const AboutBanner = () => {
         >
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="max-w-2xl">
-              <h2 className="text-2xl md:text-[2.16rem] font-sofia font-semibold text-oxford-white mb-6">
+              <h2 className="text-xl md:text-[1.73rem] font-sofia font-semibold text-oxford-white mb-6">
                 Born from Oxford University's Excellence
               </h2>
               <p className="text-lg text-oxford-white/90 leading-relaxed">

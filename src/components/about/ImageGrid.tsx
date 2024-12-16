@@ -17,7 +17,7 @@ const ImageGrid = () => {
             className="w-full rounded-xl overflow-hidden hover:scale-[1.02] transition-transform duration-300"
           >
             <img
-              src="/lovable-uploads/18dbae4d-1674-4a17-aeb7-9e646b02262a.png"
+              src="/lovable-uploads/a3fca8f5-783e-4c1b-8506-2a2aacf14b01.png"
               alt="Oxford V Team and Activities"
               className="w-full h-full object-cover"
             />
