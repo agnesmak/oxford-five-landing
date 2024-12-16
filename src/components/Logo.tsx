@@ -11,38 +11,23 @@ const Logo = ({ className = "" }: { className?: string }) => {
         xmlns="http://www.w3.org/2000/svg"
         className="h-8"
       >
-        {/* Elegant outer circle */}
-        <circle 
-          cx="24" 
-          cy="24" 
-          r="22" 
-          stroke="currentColor" 
-          strokeWidth="1.5" 
-          fill="none" 
+        {/* O letter */}
+        <path
+          d="M14 16C14 16 19 14 24 14C29 14 34 16 34 16C34 16 36 21 36 24C36 27 34 32 34 32C34 32 29 34 24 34C19 34 14 32 14 32C14 32 12 27 12 24C12 21 14 16 14 16Z"
+          stroke="currentColor"
+          strokeWidth="1.5"
+          fill="none"
         />
         
-        {/* Refined analytics bars */}
-        <rect x="16" y="18" width="2" height="14" rx="1" fill="currentColor" />
-        <rect x="22" y="14" width="2" height="20" rx="1" fill="currentColor" />
-        <rect x="28" y="20" width="2" height="12" rx="1" fill="currentColor" />
-        <rect x="34" y="16" width="2" height="16" rx="1" fill="currentColor" />
-        
-        {/* Subtle data points */}
-        <circle cx="17" cy="18" r="1" fill="currentColor" />
-        <circle cx="23" cy="14" r="1" fill="currentColor" />
-        <circle cx="29" cy="20" r="1" fill="currentColor" />
-        <circle cx="35" cy="16" r="1" fill="currentColor" />
-        
-        {/* Elegant connecting line */}
+        {/* V letter */}
         <path
-          d="M17 18C17 18 23 14 23 14C23 14 29 20 29 20C29 20 35 16 35 16"
+          d="M20 16L24 32L28 16"
           stroke="currentColor"
-          strokeWidth="0.75"
-          strokeLinecap="round"
+          strokeWidth="1.5"
           fill="none"
         />
       </svg>
-      <span className="font-gloock text-xl tracking-wider">OXFORD FIVE</span>
+      <span className="font-gloock text-xl tracking-[0.2em] uppercase">Oxford Five</span>
     </div>
   );
 };
