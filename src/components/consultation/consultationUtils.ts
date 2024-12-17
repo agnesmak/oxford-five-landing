@@ -11,6 +11,9 @@ type ConsultationData = {
   message: string;
 };
 
+// Initialize EmailJS with your public key
+emailjs.init('48BN2GLcVEnoorqfQ');
+
 export const sendConsultationEmail = async (data: ConsultationData) => {
   try {
     const templateParams = {
