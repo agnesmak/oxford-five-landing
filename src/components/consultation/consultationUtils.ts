@@ -25,10 +25,10 @@ export const sendConsultationEmail = async (data: ConsultationData) => {
     };
 
     const response = await emailjs.send(
-      'YOUR_SERVICE_ID', // You'll need to replace this
-      'YOUR_TEMPLATE_ID', // You'll need to replace this
+      'service_xxxxxxx', // Replace with your Service ID
+      'template_xxxxxxx', // Replace with your Template ID
       templateParams,
-      'YOUR_PUBLIC_KEY' // You'll need to replace this
+      'public_key_xxxxxxx' // Replace with your Public Key
     );
 
     if (response.status === 200) {
