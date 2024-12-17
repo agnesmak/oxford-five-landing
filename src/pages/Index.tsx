@@ -45,7 +45,7 @@ const Index = () => {
                 </li>
                 <li>
                   <a 
-                    href="https://www.linkedin.com/company/oxford-five-ai/"
+                    href="https://www.linkedin.com/company/oxford-five-ai/?viewAsMember=true"
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="text-oxford-white/60 hover:text-oxford-white transition-colors"

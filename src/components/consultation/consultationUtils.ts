@@ -12,12 +12,11 @@ type ConsultationData = {
 };
 
 // Initialize EmailJS with your public key
-emailjs.init('48BN2GLcVEnoorqfQ');
+emailjs.init("48BN2GLcVEnoorqfQ");
 
 export const sendConsultationEmail = async (data: ConsultationData) => {
   try {
     const templateParams = {
-      to_email: 'oxfordfive1@gmail.com',
       from_name: `${data.firstName} ${data.lastName}`,
       from_email: data.email,
       country: data.country,
@@ -28,10 +27,9 @@ export const sendConsultationEmail = async (data: ConsultationData) => {
     };
 
     const response = await emailjs.send(
-      'service_9exa08e',
-      'template_kxq5h4p',
-      templateParams,
-      '48BN2GLcVEnoorqfQ'
+      "service_9exa08e",
+      "template_kxq5h4p",
+      templateParams
     );
 
     if (response.status === 200) {
