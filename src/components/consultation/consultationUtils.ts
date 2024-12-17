@@ -14,7 +14,7 @@ type ConsultationData = {
 export const sendConsultationEmail = async (data: ConsultationData) => {
   try {
     const templateParams = {
-      to_email: 'agnes.mak.dipai24-2@said.oxford.edu',
+      to_email: 'oxfordfive1@gmail.com',
       from_name: `${data.firstName} ${data.lastName}`,
       from_email: data.email,
       country: data.country,
@@ -25,10 +25,10 @@ export const sendConsultationEmail = async (data: ConsultationData) => {
     };
 
     const response = await emailjs.send(
-      'service_xxxxxxx', // Replace with your Service ID
-      'template_xxxxxxx', // Replace with your Template ID
+      'service_9exa08e',
+      'template_kxq5h4p',
       templateParams,
-      'public_key_xxxxxxx' // Replace with your Public Key
+      '48BN2GLcVEnoorqfQ'
     );
 
     if (response.status === 200) {
