@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { useToast } from "@/components/ui/use-toast";
 import {
   Form,
   FormControl,
@@ -29,10 +30,23 @@ type FormData = {
 const ConsultationForm = () => {
   const form = useForm<FormData>();
   const navigate = useNavigate();
+  const { toast } = useToast();
 
   const onSubmit = async (data: FormData) => {
-    await sendConsultationEmail(data);
-    navigate("/success");
+    try {
+      const result = await sendConsultationEmail(data);
+      toast({
+        title: "Success!",
+        description: result.message,
+      });
+      navigate("/success");
+    } catch (error) {
+      toast({
+        variant: "destructive",
+        title: "Error",
+        description: error instanceof Error ? error.message : "Something went wrong",
+      });
+    }
   };
 
   return (
