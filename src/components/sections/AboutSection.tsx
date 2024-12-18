@@ -1,6 +1,5 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
 
 const AboutSection = () => {
   return (
@@ -15,10 +14,12 @@ const AboutSection = () => {
           </p>
           <div className="flex justify-center gap-4">
             <Button asChild variant="secondary" size="lg">
-              <Link to="/about">Learn more</Link>
+              <a href="/about">Learn more</a>
             </Button>
             <Button asChild className="bg-gradient-to-r from-[#045EEC] to-[#0F2D6E] hover:opacity-90" size="lg">
-              <Link to="/consultation" target="_blank">Book a free consultation</Link>
+              <a href="https://c10lyxv6rnw.typeform.com/to/V9ZDsHul" target="_blank" rel="noopener noreferrer">
+                Book a free consultation
+              </a>
             </Button>
           </div>
         </div>

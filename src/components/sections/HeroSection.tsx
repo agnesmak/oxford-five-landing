@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 
 const phrases = [
   "Actionable Insights",
@@ -42,14 +41,15 @@ const HeroSection = () => {
         <p className="text-base text-oxford-white/80 mb-8 max-w-2xl mx-auto animate-fade-up">
           As consumers embrace AI tools like ChatGPT and Google Gemini, there are challenges for traditional SEO to keep up. Our AI-SEO solutions leverage advanced benchmarks to optimize your brand's presence in the AI-driven search landscape.
         </p>
-        <Link 
-          to="/consultation" 
+        <a 
+          href="https://c10lyxv6rnw.typeform.com/to/V9ZDsHul" 
           target="_blank"
+          rel="noopener noreferrer"
           className="inline-block bg-gradient-to-r from-[#045EEC] to-[#0F2D6E] text-oxford-white px-8 py-3 rounded-lg text-lg font-semibold hover:opacity-90 transition-opacity animate-fade-up"
           aria-label="Book a free consultation"
         >
           Book a free consultation
-        </Link>
+        </a>
       </div>
     </section>
   );

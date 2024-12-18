@@ -38,13 +38,14 @@ const Navbar = () => {
             <button onClick={handleAboutClick} className="text-oxford-white/80 hover:text-oxford-white transition-colors">
               About Us
             </button>
-            <Link 
-              to="/consultation" 
+            <a 
+              href="https://c10lyxv6rnw.typeform.com/to/V9ZDsHul" 
               target="_blank"
+              rel="noopener noreferrer"
               className="text-oxford-white/80 hover:text-oxford-white transition-colors"
             >
               Book a free consultation
-            </Link>
+            </a>
           </div>
         </div>
 
@@ -58,14 +59,15 @@ const Navbar = () => {
               >
                 About Us
               </button>
-              <Link
-                to="/consultation"
+              <a
+                href="https://c10lyxv6rnw.typeform.com/to/V9ZDsHul"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="text-oxford-white/80 hover:text-oxford-white transition-colors"
                 onClick={() => setIsOpen(false)}
               >
                 Book a free consultation
-              </Link>
+              </a>
             </div>
           </div>
         )}
