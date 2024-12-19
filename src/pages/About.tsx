@@ -26,9 +26,9 @@ const About = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/blog" className="text-oxford-white/60 hover:text-oxford-white transition-colors">
-                    Blog
-                  </Link>
+                  <span className="text-oxford-white/40 cursor-not-allowed">
+                    Blog (coming soon)
+                  </span>
                 </li>
                 <li>
                   <a 
@@ -48,12 +48,14 @@ const About = () => {
               <h3 className="text-oxford-white text-lg font-bold mb-4">Services</h3>
               <ul className="space-y-2">
                 <li>
-                  <Link 
-                    to="/consultation" 
+                  <a 
+                    href="https://c10lyxv6rnw.typeform.com/to/V9ZDsHul" 
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-oxford-white/60 hover:text-oxford-white transition-colors"
                   >
                     Book a Free Consultation
-                  </Link>
+                  </a>
                 </li>
               </ul>
             </div>
@@ -77,7 +79,7 @@ const About = () => {
           </div>
 
           <div className="border-t border-oxford-white/10 mt-12 pt-8 text-center">
-            <p className="text-oxford-white/60">&copy; 2024 Oxford V. All rights reserved.</p>
+            <p className="text-oxford-white/60">&copy; 2024 Oxford Five All rights reserved.</p>
           </div>
         </div>
       </footer>
