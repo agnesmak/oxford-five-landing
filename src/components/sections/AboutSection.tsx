@@ -14,7 +14,7 @@ const AboutSection = () => {
           </p>
           <div className="flex justify-center gap-4">
             <Button asChild variant="secondary" size="lg">
-              <a href="/aboutus">Learn more</a>
+              <a href="/about">Learn more</a>
             </Button>
             <Button asChild className="bg-gradient-to-r from-[#045EEC] to-[#0F2D6E] hover:opacity-90" size="lg">
               <a href="https://c10lyxv6rnw.typeform.com/to/V9ZDsHul" target="_blank" rel="noopener noreferrer">
